@@ -1,0 +1,17 @@
+<div class="title">{{title}}</div>
+<div  class="tbl">
+  <div *ngFor="let item of arrRand" class="item" >
+  <div [ngClass]="{'markIt': item == redNum }">{{item}}</div>
+</div>
+</div>
+<div>
+  <input class="num" type="number" [(ngModel)]="newNum">
+  <button class="btn" (click)="addNewNumber()">Add number</button>
+  <div class="msg" *ngIf="msg!=''">{{msg}}</div>
+</div>
+<div class="btns">
+  <button class="btn" *ngIf="showCheck" (click)="RedThisNumber()">Check number</button>
+  <button class="btn" *ngIf="!showCheck" (click)="showCheck=true; RemoveRedNumbers()">Uncheck number</button>
+  <button class="btn"   (click)="DeleteRedNumber()">delete number</button>
+</div>
+<p>made by shira ben zaken</p>

@@ -1,0 +1,41 @@
+
+.title{
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: teal;
+}
+.item {
+    border: 1px solid;
+    padding: 1rem;
+  }
+
+.tbl{
+  display: flex;
+}
+
+.markIt{
+  color: red;
+  font-weight: bold;
+}
+.num{
+  padding: 0.5rem;
+}
+
+.btns{
+  margin: 0 -0.5rem;
+  display: flex;
+}
+
+.btn{
+  background: teal;
+  color: white;
+  font-size: 1.2rem;
+  margin: 1rem 0.5rem;
+  border: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.msg{
+  color: red;
+}
